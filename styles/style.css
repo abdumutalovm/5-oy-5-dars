@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+table {
+  margin: 0 auto;
+  margin-top: 60px;
+}
+table tr td {
+  color: white;
+  width: 100px;
+  padding: 1px 50px;
+  text-align: center;
+  font-family: calibri;
+  border: 1px solid white;
+  font-size: 20px;
+}
+
+table #wrapper td {
+  background-color: white;
+  color: black;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+table #wrapper {
+}
+form {
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px 40px;
+  gap: 2px;
+  border-radius: 20px;
+  animation: shadowLight 8s forwards infinite;
+}
+@keyframes shadowLight {
+  0% {
+    box-shadow: 0px 0px 60px red;
+  }
+  50% {
+    box-shadow: 0px 0px 60px hsl(183, 100%, 50%);
+  }
+  100% {
+    box-shadow: 0px 0px 60px red;
+  }
+}
+form h2 {
+  font-family: calibri;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+form label {
+  color: white;
+  font-family: calibri;
+  font-size: 20px;
+}
+form input {
+  color: white;
+  background-color: black;
+  padding: 7px;
+  border: 1px solid black;
+  border-bottom-color: white;
+  font-size: 15px;
+
+  margin-bottom: 5px;
+}
+form select {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+
+  margin-top: 5px;
+}
+form #desc {
+  height: 100px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  resize: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.buttons button {
+  padding: 7px 15px;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.buttons button:hover {
+  box-shadow: 0px 0px 10px hsl(183, 100%, 50%);
+  text-shadow: 0px 0px 3px hsl(183, 100%, 50%);
+}
+.buttons button:nth-child(2):hover {
+  box-shadow: 0px 0px 10px red;
+  text-shadow: 0px 0px 3px red;
+}

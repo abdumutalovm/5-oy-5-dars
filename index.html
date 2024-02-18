@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="form">
+            <h2>User information</h2>
+            <label for="">Name</label>
+            <input type="text" id="name">
+
+            <label for="">Surname</label>
+            <input type="text" id="surname">
+
+            <label for="">Age</label>
+            <input type="number" id="age">
+
+            <label for="">Phone number</label>
+            <input type="text" id="pNumber">
+
+            <label for="">Email</label>
+            <input type="text" id="email">
+
+            <label for="">Password</label>
+            <input type="password" id="password">
+
+            <select name="" id="nat">
+                <option value="uzbek">Uzbek</option>
+                <option value="russian">Russian</option>
+                <option value="english">English</option>
+            </select>
+            <textarea id="desc" cols="30" rows="10"></textarea>
+            <div class="buttons">
+                <button id="saveButton">Save</button>
+                <button id="deleteButton">Delete all</button>
+            </div>
+        </form>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Surname</td>
+                <td>Age</td>
+                <td>Phone number</td>
+                <td>Email</td>
+                <td>Password</td>
+            </tr>
+            <tr id="wrapper">
+
+            </tr>
+        </table>
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
